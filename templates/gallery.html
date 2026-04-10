@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="gallery">
+
+<h1 class="heading">Our Gallery</h1>
+
+<div class="gallery-container">
+
+<!-- Jagannath -->
+<div class="gallery-card">
+<img src="{% static 'images/jagannath1.jpeg' %}" alt="jaganath">
+<div class="overlay">Jagannath Tour</div>
+</div>
+
+<div class="gallery-card">
+<img src="{% static 'images/jagannath2.jpeg' %}" alt="jaganath">
+<div class="overlay">Jagannath Temple Tour</div>
+</div>
+
+<!-- Kedarnath -->
+<div class="gallery-card">
+<img src="{% static 'images/kedarnath1.jpeg' %}" alt="kedarnath">
+<div class="overlay">Kedarnath Tour</div>
+</div>
+
+<div class="gallery-card">
+<img src="{% static 'images/kedarnath2.jpeg' %}" alt="kedarnath">
+<div class="overlay">Kedarnath Temple Tour</div>
+</div>
+
+<!-- Tirupati -->
+<div class="gallery-card">
+<img src="{% static 'images/tirupati1.jpeg' %}" alt="tirupati">
+<div class="overlay">Tirupati Tour</div>
+</div>
+
+<div class="gallery-card">
+<img src="{% static 'images/tirupati2.jpeg' %}" alt="tirupati">
+<div class="overlay">Tirupati Temple Tour</div>
+</div>
+
+<!-- Vrindavan -->
+<div class="gallery-card">
+<img src="{% static 'images/vrindavan1.jpeg' %}" alt="vrindavan">
+<div class="overlay">Vrindavan Tour</div>
+</div>
+
+<div class="gallery-card">
+<img src="{% static 'images/vrindavan2.jpeg' %}" alt="vrindavan">
+<div class="overlay">Vrindavan Temple Tour</div>
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}

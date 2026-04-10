@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="packages">
+
+<h1 class="heading">Our Packages</h1>
+
+<div class="package-container">
+
+<!-- Jagannath -->
+<div class="package-card">
+<img src="{% static 'images/jagannath.jpeg' %}" alt="Jagannath">
+
+<h3>Jagannath Tour</h3>
+<p>3 Days / 2 Nights</p>
+<h4>₹25,000</h4>
+
+<a href="{% url 'package_detail' 'Jagannath' %}" class="btn">View Details</a>
+</div>
+
+<!-- Kedarnath -->
+<div class="package-card">
+<img src="{% static 'images/kedarnath.jpeg' %}" alt="Kedarnath">
+
+<h3>Kedarnath Tour</h3>
+<p>5 Days / 4 Nights</p>
+<h4>₹50,000</h4>
+
+<a href="{% url 'package_detail' 'Kedarnath' %}" class="btn">View Details</a>
+</div>
+
+<!-- Tirupati -->
+<div class="package-card">
+<img src="{% static 'images/tirupati.jpeg' %}" alt="Tirupati">
+
+<h3>Tirupati Tour</h3>
+<p>4 Days / 3 Nights</p>
+<h4>₹18,000</h4>
+
+<a href="{% url 'package_detail' 'Tirupati' %}" class="btn">View Details</a>
+</div>
+
+<!-- Vrindavan -->
+<div class="package-card">
+<img src="{% static 'images/vrindavan.jpeg' %}" alt="Vrindavan">
+
+<h3>Vrindavan Tour</h3>
+<p>4 Days / 3 Nights</p>
+<h4>₹25,000</h4>
+
+<a href="{% url 'package_detail' 'Vrindavan' %}" class="btn">View Details</a>
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}
+
+<a href="{% url 'package_detail' 'Jagannath' %}" class="btn">View Details</a>
+<a href="{% url 'package_detail' 'Kedarnath' %}" class="btn">View Details</a>
+<a href="{% url 'package_detail' 'Tirupati' %}" class="btn">View Details</a>
+<a href="{% url 'package_detail' 'Vrindavan' %}" class="btn">View Details</a>

@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="reviews-section">
+
+<h2 class="review-title">Traveler Reviews</h2>
+
+<div class="slider">
+
+<div class="slides">
+
+<!-- Review 1 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/65.jpg">
+<p>"Amazing experience! The Goa trip was perfectly organized."</p>
+<h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<span>Sanju – Goa Trip</span>
+</div>
+
+<!-- Review 2 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<p>"Manali package was wonderful. Beautiful hotels and service."</p>
+<h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<span>Tarun – Manali Tour</span>
+</div>
+
+<!-- Review 3 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<p>"Kerala backwaters were magical. Highly recommend this tour."</p>
+<h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<span>Kavana – Kerala Tour</span>
+</div>
+
+<!-- Review 4 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/55.jpg">
+<p>"Jaipur palace tour was stunning. Loved the heritage sites."</p>
+<h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<span>Rahul – Jaipur Trip</span>
+</div>
+
+<!-- Review 5 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/50.jpg">
+<p>"The Goa beach tour was amazing! Perfect hotels and nightlife experience."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Priya Sharma – Goa Package</span>
+</div>
+
+<!-- Review 6 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/60.jpg">
+<p>"Manali snow mountains were breathtaking. Everything was well planned."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Rohit Mehta – Manali Package</span>
+</div>
+
+<!-- Review 7 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/30.jpg">
+<p>"Kerala houseboat experience was peaceful and beautiful."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Ananya Kapoor – Kerala Package</span>
+</div>
+
+<!-- Review 8 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/20.jpg">
+<p>"Jaipur forts and palaces were stunning. Guide service was excellent."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Aman Verma – Jaipur Package</span>
+</div>
+
+<!-- Review 9 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/10.jpg">
+<p>"Very professional travel agency. The trip was smooth and enjoyable."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Neha Singh – Goa Tour</span>
+</div>
+
+<!-- Review 10 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/45.jpg">
+<p>"The Manali adventure activities were thrilling. Loved every moment."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Karan Patel – Manali Tour</span>
+</div>
+
+<!-- Review 11 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/women/22.jpg">
+<p>"Kerala greenery and backwaters were unforgettable."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Meera Nair – Kerala Tour</span>
+</div>
+
+<!-- Review 12 -->
+<div class="review-card">
+<img src="https://randomuser.me/api/portraits/men/15.jpg">
+<p>"The Jaipur cultural tour gave us a real royal experience."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<span>Arjun Gupta – Jaipur Package</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+let index = 0;
+
+function slideReviews(){
+
+const slider = document.querySelector(".slides");
+const cards = document.querySelectorAll(".review-card");
+
+index++;
+
+if(index > cards.length - 3){
+index = 0;
+}
+
+slider.style.transform = "translateX(-"+ index*320 +"px)";
+
+}
+
+setInterval(slideReviews,3000);
+
+</script>
+
+{% endblock %}
