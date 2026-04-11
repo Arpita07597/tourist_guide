@@ -328,3 +328,6 @@ def reviews(request):
 def about(request):
     return render(request, "about.html")
 
+def booking_success(request):
+    return render(request, 'booking_success.html')
+
