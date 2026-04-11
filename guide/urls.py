@@ -46,7 +46,7 @@ urlpatterns = [
     #About us
     path('about/', views.about, name='about'),
 
-    
+    path('booking-success/', views.booking_success,name='booking_success')
 
 ]
 
