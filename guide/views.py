@@ -98,7 +98,7 @@ def book_package(request):
             fail_silently=True,
         )
 
-        return render(request, "success.html")
+        return render(request, "booking_success.html")
 
     # THIS LINE IS IMPORTANT
     return render(request, "book.html")

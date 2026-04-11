@@ -46,6 +46,12 @@ urlpatterns = [
     #About us
     path('about/', views.about, name='about'),
 
+    #success
+    path('booking-success/', views.booking_success, name='booking_success'),
+
+    #contact
+    path('contact-success/', views.contact_success, name='contact_success')
+
 ]
 
 # MEDIA FILES
