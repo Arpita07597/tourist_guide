@@ -54,7 +54,9 @@ ROOT_URLCONF = 'tourist_guide.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates'],
+        'DIRS': [
+            'C:/Users/Arpitha/Desktop/tourist 5/tourist_guide/templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

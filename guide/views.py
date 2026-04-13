@@ -329,5 +329,5 @@ def about(request):
     return render(request, "about.html")
 
 def booking_success(request):
-    return render(request," guide/booking_success.html")
+    return render(request,"booking_success.html")
 
